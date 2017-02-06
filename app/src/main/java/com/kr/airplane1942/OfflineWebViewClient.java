@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -113,4 +114,6 @@ public class OfflineWebViewClient extends WebViewClient {
         ((WebActivity)mActivity).showWebView();
         ((WebActivity)mActivity).hideProgress();
     }
+
+
 }

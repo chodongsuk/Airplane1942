@@ -5,6 +5,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -107,6 +108,18 @@ public class WebActivity extends AppCompatActivity {
 
     public void hideWebView(){
         mWebView.setVisibility(View.GONE);
+    }
+
+
+    public boolean onKeyDown(int KeyCode, KeyEvent event) {
+        if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            if (KeyCode == KeyEvent.KEYCODE_BACK) {
+                final MainStoreTypeDialog mMainDialog = new MainStoreTypeDialog();// call the static method
+                mMainDialog.show(getSupportFragmentManager(), "dialog");
+                return true;
+            }
+        }
+        return super.onKeyDown(KeyCode, event);
     }
 
 

@@ -7,9 +7,12 @@
               android:layout_gravity="center"
               android:gravity="center">
 
-    <ImageView
-        android:layout_width="50dip"
-        android:layout_height="50dip"
-        android:src="@mipmap/icon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#cfb58f"
+        android:text="The Game"
+        />
 
 </LinearLayout>
