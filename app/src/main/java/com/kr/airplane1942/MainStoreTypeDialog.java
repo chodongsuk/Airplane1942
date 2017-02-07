@@ -79,7 +79,7 @@ public class MainStoreTypeDialog extends DialogFragment implements OnClickListen
 					Intent NextIntent = new Intent(Intent.ACTION_SEND);
 					NextIntent.setType("text/plain");
 					NextIntent.putExtra(Intent.EXTRA_SUBJECT, getActivity().getString(R.string.app_name));
-					NextIntent.putExtra(Intent.EXTRA_TEXT, "It's nice to meet you.\n\n"+"Download:\n" + "https://play.google.com/store/apps/details?id=kr.ds.airplane1942");
+					NextIntent.putExtra(Intent.EXTRA_TEXT, "It's nice to meet you.\n\n"+"Download:\n" + "https://play.google.com/store/apps/details?id=com.kr.airplane1942");
 					startActivity(Intent.createChooser(NextIntent, getActivity().getString(R.string.app_name) + "Share"));
 				} catch (Exception e) {
 					// TODO: handle exception
